@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos com HTML 5</title>
+</head>
+<body>
+    <h1>Videos hospedados localmente</h1>
+    <h2>Este video está hospedado no meu próprio servidor:</h2>
+    
+    <!--<video src="midia/video.mp4" width="500" height="500" controls></video>-->
+
+    <video controls width="500" height="500">
+        <source src="midia/video.mp4" type="video/mp4">
+        <source src="midia/video.m4v" type="video/m4v">
+        <source src="midia/video.ogv" type="video/ogv">
+        <p>Seu navegador não tem compatibilidade com video players.</p>
+        <!--Idealmente, coloque todos os formatos disponiveis, do menor ao maior arquivo.-->
+    </video>
+
+    <h1>Vídeos hospedados externamente</h1>
+    <h2>Este video está hospedado em outro servidor(youtube/vimeo...)</h2>
+    <p>Animation Demo Reel</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <p>A Brief History of Us</p>
+    <iframe src="https://player.vimeo.com/video/790872475?h=9c79673d92" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/790872475">A Brief History of Us</a> from <a href="https://vimeo.com/fumistudio">Fumi Studio</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+</body>
+</html>
