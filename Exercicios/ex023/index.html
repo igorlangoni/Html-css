@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas em HTML</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.5em;
+        }
+
+        table{
+            width: 350px;
+            height: 250px;
+            border-collapse: collapse;
+        }  
+       
+        tr.um{
+            background-color: lightcoral;
+        }
+
+        tr.dois{
+            background-color: lightgreen;
+        }
+
+        tr.tres{
+            background-color: lightslategrey;
+        }
+        
+        td{
+            border: 1px solid black;
+            padding: 5px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        .numero{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabela simples 1</h1>
+    
+    <!--
+        Hierarquia de Tabelas(simples)
+        Table
+            Table row(tb)
+                Table header(th)
+                Table data(td)
+    -->
+
+    <table><!-- Cria Tabela-->
+        <tr class="um"><!--Primeira Linha-->
+            <td>A1</td><!--Dados da primeira linha-->
+            <td>B1</td>
+            <td class="numero">C1</td>
+        </tr>
+        <tr class="dois"><!--Segunda Linha-->
+            <td>A2</td><!--Dados da segunda linha-->
+            <td class="numero">B2</td>
+            <td>C2</td>
+        </tr>
+        <tr class="tres"><!--Terceira Linha-->
+            <td>A3</td><!--Dados da terceira linha-->
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+    </table>
+</body>
+</html>
